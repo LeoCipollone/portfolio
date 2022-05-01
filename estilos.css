@@ -53,7 +53,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     height: calc(100vh - 65px);
-    background-image: url(/images/fondo.jpeg);
+    background-image: url(./images/fondo.jpeg);
     background-size: 100% 100%;
     object-fit: cover;
     color: white;
