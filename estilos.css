@@ -150,12 +150,16 @@ footer{
     justify-content: flex-start;
     align-items: center;
     color: #F2F2F2;
-    height: 250px;
+    height: 180px;
 }
 .contacto{
     width: 30%;
     display: flex;
     justify-content: center;
+}
+
+.copyright {
+    padding-top: 30px;
 }
 
 .uno,
@@ -274,6 +278,15 @@ footer{
     }
 
     .red-social{
-        margin: 0 10px 0 10px;
+        margin: 10px;
+    }
+
+    .footer {
+        height: 150px;
+    }
+
+    .copyright {
+        padding: 0;
+        margin: 20px 0px;
     }
 }
