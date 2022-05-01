@@ -181,14 +181,14 @@ footer{
 /*Dispositivos moviles*/
 @media (max-width: 1000px) {
     .terminal {
-        font-size: 14px;
-        margin-right: 4px;
+        font-size: 10px;
+        margin-right: 3px;
     }
     .typing {
-        font-size: 14px;
-        width: 213px;
+        font-size: 10px;
+        width: 152px;
 
-        animation: typing 2.9s steps(30), 
+        animation: typing 3s steps(30), 
         blink .6s infinite step-end alternate;
         overflow: hidden;
     }
