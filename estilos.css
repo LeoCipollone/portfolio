@@ -180,31 +180,45 @@ footer{
 
 /*Dispositivos moviles*/
 @media (max-width: 1000px) {
+    .typing {
+        font-size: 16px;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
     .caja-central{
         width: 90%;
         height: 70%;
         flex-direction: column;
     }
+
     .caja-cara{
         width: 100%;
         height: 50%;
     }
+
     .caja-presentacion{
         width: 100%;
         height: 50%;
         align-items: flex-start;
     }
+
     .aptitudes{
         width: auto;
     }
+
     .dos{
         height: auto;
         padding: 0 10px 10px 10px;
-
     }
+
     .tres{
         height: auto;
     }
+
     .proyectos{
         flex-direction: column;
         width: 100%;
@@ -212,10 +226,12 @@ footer{
         justify-content: space-between;
         padding-bottom: 20px;
     }
+
     .card{
         width: 80%;
         margin-top: 20px;
     }
+
     .red-social{
         margin: 0 10px 0 10px;
     }
