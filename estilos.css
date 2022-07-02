@@ -623,6 +623,10 @@ footer .wave#wave4 {
         font-size: 14px;
         text-align: center;
     }
+    .cursos ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .tres{
         display: flex;
