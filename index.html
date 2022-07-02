@@ -28,12 +28,18 @@
 
   <section class="uno">
     <div class="caja-central">
-      <div class="caja-cara">
-        <img class="cara" src="./images/cara.png" alt="Leo Cipollone">
+
+      <div class="box">
+        <div class="contenido">
+          <img src="./images/perfil.png" alt="Leo Cipollone">
+          <h2>Leo Cipollone<br><span>Frontend Developer</span></h2>
+          <a href="https://www.linkedin.com/in/leocipollone/">Contratame</a>
+        </div>
       </div>
+
       <div class="caja-presentacion">
         <div>
-          <h1>¡Bienvenidos!</h1>
+          <h1 class="section-title">¡Bienvenidos!</h1>
           <p class="presentacion">
             Mi nombre es Leo y estás viendo mi pagina personal, donde se encuentran mis proyectos y algo de info sobre
             mí, a continuación. ¡Espero que te guste!
@@ -44,7 +50,7 @@
   </section>
 
   <section class="dos">
-    <h2>Sobre mí</h2>
+    <h2 class="section-title">Sobre mí</h2>
     <p>
       Soy estudiante del Bootcamp Henry y estoy cursando el nivelatorio de la Tecnicatura Universitaria en Programación
       en la UTN desde Mayo 2022. He realizado algunos cursos como The Odin Project basado en Full Stack Javascript y los
@@ -53,13 +59,13 @@
       Desde niño me llamaron la atención los videojuegos y eso hizo que más adelante en mi adolescencia me comenzara a
       interesar más por la tecnología y luego descubriera la programación.
     </p>
-    <div>
+    <!-- <div>
       <i class="fa-solid fa-file-lines fa-2xl"></i>
-    </div>
+    </div> -->
     <p>
       <a href="./documents/leo-cipollone-cv.pdf" target="_blank">Curriculum Vitae</a>
     </p>
-    <h2>Aptitudes</h2>
+    <h2 class="section-title">Aptitudes</h2>
     <p>
       Estas son algunas de las tecnologías de las que tengo conocimientos.
     </p>
@@ -74,53 +80,77 @@
         <i class="fa-brands fa-git fa-2xl"></i>
       </div>
     </div>
-    <h2>Cursos realizados</h2>
-    <ul>
+    <h2 class="section-title">Cursos realizados</h2>
+    <!-- <ul>
       <li><a href="https://www.theodinproject.com/paths/full-stack-javascript">The Odin Project Full Stack</a> (160HS)</li>
       <li><a href="https://www.soyhenry.com/webfullstack">Bootcamp Henry Full Stack</a> (4 meses Fulltime)</li>
       <li><a href="https://www.youtube.com/watch?v=kN1XP-Bef7w&ab_channel=SoyDalto">Curso de HTML de Dalto</a> (2HS)</li>
       <li><a href="https://www.youtube.com/watch?v=OWKXEJN67FE&ab_channel=SoyDalto">Curso de CSS de Dalto</a> (9HS)</li>
       <li><a href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA">Curso de Javascript de Jon Mircha</a> (60HS)</li>
       <li><a href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk">Curso de React.js de Jon Mircha</a> (40HS)</li>
-    </ul>
+    </ul> -->
+    <div class="cursos">
+      <ul>
+        <li>
+          <a href="https://www.theodinproject.com/paths/full-stack-javascript">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>The Odin Project Full Stack<br>(160HS)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.soyhenry.com/webfullstack">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>Bootcamp Henry Full Stack (4 meses Fulltime)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=kN1XP-Bef7w&ab_channel=SoyDalto">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>Curso de HTML de Dalto<br>(2HS)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/watch?v=OWKXEJN67FE&ab_channel=SoyDalto">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>Curso de CSS de Dalto<br>(9HS)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>Curso de Javascript de Jon Mircha (60HS)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span>Curso de React.js de Jon Mircha<br>(40HS)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <section class="tres">
-    <!-- <h2>Mis Proyectos</h2>
-    <div class="proyectos">
-      <div class="card">
-        <h3>Calculadora</h3>
-        <a href="https://leocipollone.github.io/calculator/" target="_blank">
-          <img src="./images/calculadora.jpg" alt="Imagen calculadora">
-        </a>
-          <p>
-            App sencilla de calculadora con modo oscuro y claro desarrollada en CSS y Javascript.
-          </p>
-          <a href="https://github.com/LeoCipollone/calculator" target="_blank"> => Repositorio <= </a>
-          <a href="https://leocipollone.github.io/calculator/" target="_blank"> => Pagina Web <= </a>
-      </div>
-      <div class="card">
-        <h3>TuPeli</h3>
-        <a href="https://leocipollone.github.io/movies/" target="_blank">
-          <img src="./images/movies.jpg" alt="Portada buscador de peliculas">
-        </a>
-          <p>
-           Buscador de peliculas y series, desarrollado en CSS, React y Redux.
-           (En construcción)
-          </p>
-          <a href="https://github.com/LeoCipollone/movies" target="_blank"> => Repositorio <= </a>
-          <a href="https://leocipollone.github.io/movies/" target="_blank"> => Pagina Web <= </a>
-      </div>
-      <div class="card">
-        <h3>Encuentra tu mascota</h3>
-        <img src="./images/mascotas.jpg" alt="Imagen mascotas">
-        <p>
-          Mi proyecto más ambicioso aun en construcción
-        </p>
-        <a href="#" target="_blank">Proximamente</a>
-      </div>
-    </div> -->
-    <h2>Mis Proyectos</h2>
+    <h2 class="section-title">Mis Proyectos</h2>
     <div class="proyectos">
       <div class="card">
         <div class="imgBx">
@@ -129,8 +159,12 @@
         <div class="content">
           <h3>Calculadora</h3>
           <p>App sencilla de calculadora con modo oscuro y claro desarrollada en <b>CSS</b> y <b>Javascript</b>.</p>
-          <a href="https://github.com/LeoCipollone/calculator" target="_blank"> => Repositorio <= </a>
-          <a href="https://leocipollone.github.io/calculator/" target="_blank"> => Demo <= </a>
+          <button>
+            <a href="https://github.com/LeoCipollone/calculator" target="_blank">Repositorio</a>
+          </button>
+          <button>
+            <a href="https://leocipollone.github.io/calculator/" target="_blank">Demo</a>
+          </button>
         </div>
       </div>
       <div class="card">
@@ -140,8 +174,12 @@
         <div class="content">
           <h3>TuPeli</h3>
           <p>Buscador de peliculas y series, desarrollado en <b>CSS</b>, <b>React</b> y <b>Redux</b>. (En construcción)</p>
-          <a href="https://github.com/LeoCipollone/movies" target="_blank"> => Repositorio <= </a>
-          <a href="https://leocipollone.github.io/movies/" target="_blank"> => Demo <= </a>
+          <button>
+            <a href="https://github.com/LeoCipollone/movies" target="_blank">Repositorio</a>
+          </button>
+          <button>
+            <a href="https://leocipollone.github.io/movies/" target="_blank">Demo</a>
+          </button>
         </div>
       </div>
       <div class="card">
@@ -150,8 +188,10 @@
         </div>
         <div class="content">
           <h3>Encuentra tu mascota</h3>
-          <p>Mi proyecto más ambicioso aun en construcción.</p>
-          <a href="#" target="_blank">Proximamente</a>
+          <p>Mi proyecto más ambicioso aún en construcción.</p>
+          <button>
+            <a href="#" target="_blank">Proximamente</a>
+          </button>
         </div>
       </div>
     </div>
@@ -164,7 +204,7 @@
       <div class="wave" id="wave3"></div>
       <div class="wave" id="wave4"></div>
     </div>
-    <h2>Contacto</h2>
+    <h2 class="section-title">Contacto</h2>
     <ul class="social-icon">
       <li>
         <a href="https://www.linkedin.com/in/leocipollone/" target="_blank">
