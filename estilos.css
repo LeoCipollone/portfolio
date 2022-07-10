@@ -201,7 +201,7 @@ ul {
     align-items: center;
     text-align: center;
     background-color: #fafafa;
-    height: 850px;
+    height: 1100px;
     color: #303030;
     padding-left: 20%;
     padding-right: 20%;
@@ -223,7 +223,7 @@ ul {
     letter-spacing: 0.2em;
 }
 
-.aptitudes{
+/* .aptitudes{
     width: 50%;
 }
 .tech-list{
@@ -231,29 +231,147 @@ ul {
     justify-content: space-evenly;
     padding: 20px;
 }
-
 .tech{
     height: 90px;
-}
-/* .dos ul {
+} */
+.tecnologias-container {
     display: flex;
-}
-.dos ul li {
-    display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.aptitudes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 15px 20px;
-    background: #0293cc;
-    color: #fafafa;
-    border: none;
-    margin: 5px;
+    gap: 40px;
 }
 
-.dos ul li a {
-    text-decoration: none;
-    color: #fafafa;
-} */
+.aptitudes .tech-list {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aptitudes .tech-list .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.aptitudes .tech-list .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+
+.aptitudes .tech-list .percent svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke: #fafafa;
+    transform: translate(5px, 5px);
+}
+
+.aptitudes .tech-list .percent svg circle:nth-child(2) {
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 6s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dot {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    animation: animateDot 2s linear forwards;
+    animation-delay: 4s;
+}
+
+@keyframes animateDot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.dot::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr);
+}
+
+.number {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2.5s;
+}
+
+.number h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.number h2 span {
+    font-weight: 300;
+    color: #333;
+    font-size: 0.5em;
+}
+
+.number p {
+    font-weight: 300;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.number i {
+    display: block;
+    margin: 5px 0;
+}
+
 .cursos {
     display: flex;
     align-items: center;
@@ -600,28 +718,19 @@ footer .wave#wave4 {
         margin: 14px;
         font-size: 14px;
     }
-
-    .aptitudes{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .tech-list {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    ul {
-        list-style: none;
-        padding: 0px 20px;
-    }
-
+    
     .dos{
         height: auto;
         padding: 10px;
         font-size: 14px;
         text-align: center;
+    }
+    .aptitudes {
+        width: 100vw;
+        gap: 20px;
+    }
+    .aptitudes .tech-list {
+        flex-wrap: wrap;
     }
     .cursos ul {
         flex-wrap: wrap;
