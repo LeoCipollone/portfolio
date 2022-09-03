@@ -735,6 +735,12 @@ footer p {
   }
 }
 @media (max-width: 500px) {
+  header {
+    padding: 5px;
+  }
+  .language {
+    margin: 0;
+  }
   .tres{
       display: flex;
       flex-direction: column;
@@ -778,5 +784,30 @@ footer p {
   }
   .copyright {
       font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding: 5px;
+  }
+  .terminal {
+    font-size: 8px;
+}
+  .typing {
+    font-size: 8px;
+    width: 122px;
+
+    animation: typing 3s steps(30), 
+    blink .6s infinite step-end alternate;
+    overflow: hidden;
+  }
+  .language {
+    margin: 0;
+    font-size: 8px;
+    padding: 5px 0;
+  }
+  .language option {
+    font-size: 8px;
   }
 }

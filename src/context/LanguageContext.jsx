@@ -5,6 +5,8 @@ const LanguageContext = createContext();
 const initialLanguage = "es"
 const translations = {
     es: {
+        language01: "Español",
+        language02: "Inglés",
         presentationTitle: "¡Bienvenido!",
         presentationButton: "Contratame",
         presentationOne: "¡Hola! 👋 Mi nombre es Leo y soy Frontend Developer.",
@@ -32,6 +34,8 @@ const translations = {
         copyright: "Todos los derechos reservados",
     },
     en: {
+        language01: "Spanish",
+        language02: "English",
         presentationTitle: "Welcome!",
         presentationButton: "Hire me",
         presentationOne: "Hi! 👋 My name is Leo and I'm Frontend Developer.",
