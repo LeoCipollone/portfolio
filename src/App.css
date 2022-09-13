@@ -482,6 +482,7 @@ ul {
 }
 .proyectos{
   position: relative;
+  width: 100vw;
   min-height: 430px;
   display: flex;
   justify-content: center;
