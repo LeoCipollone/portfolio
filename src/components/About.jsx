@@ -8,8 +8,8 @@ const About = () => {
   return (
     <>
       <h2 className="section-title">{texts.aboutTitle}</h2>
-      <p>{texts.aboutParagraphOne}</p>
-      <p>{texts.aboutParagraphTwo}</p>
+      <p className="about-p">{texts.aboutParagraphOne}</p>
+      <p className="about-p">{texts.aboutParagraphTwo}</p>
       <h3 className="resume">{texts.resume}</h3>
       <div className="resume">
         <p>
