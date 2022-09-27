@@ -18,6 +18,8 @@ const Techs = () => {
             <span />
             <span />
             <span />
+          </li>
+          <li>
             <span />
             <span />
             <span />
@@ -30,6 +32,8 @@ const Techs = () => {
             <span />
             <span />
             <span />
+          </li>
+          <li>
             <span />
             <span />
             <span />
@@ -42,6 +46,8 @@ const Techs = () => {
             <span />
             <span />
             <span />
+          </li>
+          <li>
             <span />
             <span />
             <span />
@@ -54,6 +60,8 @@ const Techs = () => {
             <span />
             <span />
             <span />
+          </li>
+          <li>
             <span />
             <span />
             <span />
@@ -66,11 +74,6 @@ const Techs = () => {
             <span />
             <span />
             <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
           </li>
           <li>
             <span />
@@ -78,66 +81,8 @@ const Techs = () => {
             <span />
             <span />
             <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
           </li>
           <li>
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </li>
-          <li>
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </li>
-          <li>
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </li>
-          <li>
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </li>
-          <li>
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
             <span />
             <span />
             <span />

@@ -13,8 +13,7 @@ const Courses = () => {
   return (
     <>
       <h2 className="section-title">{texts.coursesTitle}</h2>
-      <div className="cursos">
-      <div className="proyectos">
+      <div className="courses-container">
         <div className="courses-card">
           <div className="imgBx">
           <a
@@ -22,7 +21,7 @@ const Courses = () => {
               target="_blank"
               rel="noreferrer"
             >
-            <img src={henry} alt="Proyecto01" />
+            <img src={henry} alt="Curso Henry" />
             </a>
           </div>
           <div className="content">
@@ -36,7 +35,7 @@ const Courses = () => {
                 href="https://www.accenture.com/ar-es/about/responsible-business/iniciatec"
                 target="_blank"
                 rel="noreferrer">
-            <img src={iniciatec} alt="Proyecto02" />
+            <img src={iniciatec} alt="Curso Iniciatec" />
             </a>
           </div>
           <div className="content">
@@ -51,7 +50,7 @@ const Courses = () => {
               target="_blank"
               rel="noreferrer"
             >
-            <img src={javascript} alt="Proyecto03" />
+            <img src={javascript} alt="Curso JavaScript" />
             </a>
           </div>
           <div className="content">
@@ -66,7 +65,7 @@ const Courses = () => {
               target="_blank"
               rel="noreferrer"
             >
-            <img src={react} alt="Proyecto03" />
+            <img src={react} alt="Curso React" />
             </a>
           </div>
           <div className="content">
@@ -74,7 +73,6 @@ const Courses = () => {
             <p>{texts.coursesReact}</p>
           </div>
         </div>
-      </div>
       </div>
     </>
   );

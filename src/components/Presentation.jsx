@@ -9,8 +9,8 @@ const Presentation = () => {
   return (
     <section className="uno">
       <div className="caja-central">
-        <div className="box">
-          <div className="contenido">
+        <div className="presentation-photo-box">
+          <div className="presentation-content">
             <img src={Perfil} alt="Leo Cipollone" />
             <h2>
               Leo Cipollone

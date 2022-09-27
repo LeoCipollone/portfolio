@@ -21,7 +21,7 @@ function App() {
           <Techs />
           <Courses />
         </section>
-        <div className="background">
+        <div className="tres background">
           <Cards />
           <Footer />
           <Whatsapp />

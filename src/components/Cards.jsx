@@ -13,7 +13,7 @@ const Cards = () => {
   return (
     <section className="tres">
       <h2 className="section-title">{texts.projectsTitle}</h2>
-      <div className="container">
+      <div className="projects-container">
         <Tilt tiltReverse={true}>
         <div className="cardWrap">
           <div className="card">
