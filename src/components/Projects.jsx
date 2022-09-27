@@ -1,11 +1,11 @@
 import "../App.css";
-import Tilt from 'react-parallax-tilt';
 import { useContext } from "react";
+import Tilt from 'react-parallax-tilt';
 import LanguageContext from "../context/LanguageContext";
-import Corporativa from "../assets/proyectos/corporativa.png";
-import Movies from "../assets/proyectos/movies.png";
-import Calculadora from "../assets/proyectos/calculadora.png";
-import ChatBot from "../assets/proyectos/chatbot.png";
+import Corporativa from "../assets/images/projects/corporativa.png";
+import Movies from "../assets/images/projects/movies.png";
+import Calculadora from "../assets/images/projects/calculadora.png";
+import ChatBot from "../assets/images/projects/chatbot.png";
 
 const Cards = () => {
   const { texts } = useContext(LanguageContext);

@@ -1,6 +1,6 @@
 import './App.css';
 import About from './components/About';
-import Cards from './components/Cards';
+import Projects from './components/Projects';
 import Courses from './components/Courses';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -22,7 +22,7 @@ function App() {
           <Courses />
         </section>
         <div className="tres background">
-          <Cards />
+          <Projects />
           <Footer />
           <Whatsapp />
         </div>

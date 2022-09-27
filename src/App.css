@@ -14,13 +14,14 @@ header {
   padding-left: 25px;
 }
 .background {
-  background-image: url(./assets/fondo.jpg);
+  background-image: url("./assets/images/fondo.jpg");
   background-position: center;
   background-size: cover;
 }
 .section-title {
   text-align: center;
   font-family: bangers;
+  margin-top: 30px;
 }
 p {
   font-style: italic;
@@ -109,7 +110,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-image: url(./assets/fondo.jpg);
+  background-image: url("./assets/images/fondo.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -259,11 +260,15 @@ ul {
 .resume p {
   margin: 0 20px;
 }
+.resume-img {
+  height: 150px;
+  margin-bottom: 20px;
+}
 
 .dos p a {
   display: block;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 10px 15px;
   background: #0293cc;
   color: #fafafa;
   font-weight: bolder;
@@ -846,7 +851,9 @@ footer p {
   .App .css-1s2u09g-control {
     margin-right: 5px;
   }
-
+  .resume-img {
+    height: 100px;
+  }
   .tres {
     display: flex;
     flex-direction: column;

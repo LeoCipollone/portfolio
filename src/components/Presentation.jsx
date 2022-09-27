@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "../App.css";
 import LanguageContext from "../context/LanguageContext";
-import Perfil from "../assets/perfil.png";
+import Perfil from "../assets/images/perfil.png";
 
 const Presentation = () => {
   const { texts } = useContext(LanguageContext);

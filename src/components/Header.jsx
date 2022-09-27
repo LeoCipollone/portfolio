@@ -2,8 +2,8 @@ import "../App.css";
 import { useContext } from "react";
 import ReactSelect from 'react-select'
 import LanguageContext from "../context/LanguageContext";
-import Spanish from "../assets/idiomas/spanish.png";
-import English from "../assets/idiomas/english.png";
+import Spanish from "../assets/images/languages/spanish.png";
+import English from "../assets/images/languages/english.png";
 
 const Header = () => {
   const { texts, handleLanguage } = useContext(LanguageContext);

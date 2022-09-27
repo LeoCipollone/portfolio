@@ -1,10 +1,10 @@
 import "../App.css";
 import { useContext } from "react";
 import LanguageContext from "../context/LanguageContext";
-import javascript from "../assets/cursos/jon-javascript.png";
-import react from "../assets/cursos/jon-react.png";
-import iniciatec from "../assets/cursos/iniciatec.png";
-import henry from "../assets/cursos/henry.png";
+import javascript from "../assets/images/courses/jon-javascript.png";
+import react from "../assets/images/courses/jon-react.png";
+import iniciatec from "../assets/images/courses/iniciatec.png";
+import henry from "../assets/images/courses/henry.png";
 
 
 const Courses = () => {
