@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.f708172a.css",
-    "main.js": "/static/js/main.787e9630.js",
-    "static/js/787.aeca62f9.chunk.js": "/static/js/787.aeca62f9.chunk.js",
-    "static/media/movies.png": "/static/media/movies.5c9d4b4d6a12faa45454.png",
-    "static/media/fondo.jpg": "/static/media/fondo.abd676bddcb8cf7550f5.jpg",
-    "static/media/perfil.png": "/static/media/perfil.aaed59df4a0384216876.png",
-    "static/media/corporativa.png": "/static/media/corporativa.4b0211bf908ed514746c.png",
-    "static/media/calculadora.png": "/static/media/calculadora.701bf5c99725627f906c.png",
-    "static/media/iniciatec.png": "/static/media/iniciatec.2ed1664291e5b84e9548.png",
-    "static/media/resume.png": "/static/media/resume.41fc21f177f39586bfeb.png",
-    "static/media/chatbot.png": "/static/media/chatbot.57fe6d670f8e0375263b.png",
-    "static/media/jon-react.png": "/static/media/jon-react.184e8737fb40c833d8e9.png",
-    "static/media/jon-javascript.png": "/static/media/jon-javascript.19a60c9d2ee3d26ae282.png",
-    "static/media/english.png": "/static/media/english.9e7d3a7177965ed335aa.png",
-    "index.html": "/index.html",
-    "main.f708172a.css.map": "/static/css/main.f708172a.css.map",
-    "main.787e9630.js.map": "/static/js/main.787e9630.js.map",
-    "787.aeca62f9.chunk.js.map": "/static/js/787.aeca62f9.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.253ad1fa.css",
+    "main.js": "/portfolio/static/js/main.d287fa31.js",
+    "static/js/787.aeca62f9.chunk.js": "/portfolio/static/js/787.aeca62f9.chunk.js",
+    "static/media/movies.png": "/portfolio/static/media/movies.5c9d4b4d6a12faa45454.png",
+    "static/media/fondo.jpg": "/portfolio/static/media/fondo.abd676bddcb8cf7550f5.jpg",
+    "static/media/perfil.png": "/portfolio/static/media/perfil.aaed59df4a0384216876.png",
+    "static/media/corporativa.png": "/portfolio/static/media/corporativa.4b0211bf908ed514746c.png",
+    "static/media/calculadora.png": "/portfolio/static/media/calculadora.701bf5c99725627f906c.png",
+    "static/media/iniciatec.png": "/portfolio/static/media/iniciatec.2ed1664291e5b84e9548.png",
+    "static/media/resume.png": "/portfolio/static/media/resume.41fc21f177f39586bfeb.png",
+    "static/media/chatbot.png": "/portfolio/static/media/chatbot.57fe6d670f8e0375263b.png",
+    "static/media/jon-react.png": "/portfolio/static/media/jon-react.184e8737fb40c833d8e9.png",
+    "static/media/jon-javascript.png": "/portfolio/static/media/jon-javascript.19a60c9d2ee3d26ae282.png",
+    "static/media/english.png": "/portfolio/static/media/english.9e7d3a7177965ed335aa.png",
+    "index.html": "/portfolio/index.html",
+    "main.253ad1fa.css.map": "/portfolio/static/css/main.253ad1fa.css.map",
+    "main.d287fa31.js.map": "/portfolio/static/js/main.d287fa31.js.map",
+    "787.aeca62f9.chunk.js.map": "/portfolio/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f708172a.css",
-    "static/js/main.787e9630.js"
+    "static/css/main.253ad1fa.css",
+    "static/js/main.d287fa31.js"
   ]
 }
