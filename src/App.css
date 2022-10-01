@@ -368,41 +368,53 @@ ul {
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
 .techs-logo ul li:nth-child(5) span {
-  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg");
+  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
 .techs-logo ul li:nth-child(6) span {
-  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg");
+  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
 .techs-logo ul li:nth-child(7) span {
+  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(1px 1px 5px #ffffff);
+}
+.techs-logo ul li:nth-child(8) span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-.techs-logo ul li:nth-child(8) span {
+.techs-logo ul li:nth-child(9) span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(9) span {
+.techs-logo ul li:nth-child(10) span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(10) span {
+.techs-logo ul li:nth-child(11) span {
+  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(1px 1px 5px #ffffff);
+}
+.techs-logo ul li:nth-child(12) span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(11) span {
+.techs-logo ul li:nth-child(13) span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;

@@ -89,6 +89,27 @@ const Techs = () => {
             <span />
             <span />
           </li>
+          <li>
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </li>
+          <li>
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </li>
+          <li>
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </li>
         </ul>
       </div>
     </>
