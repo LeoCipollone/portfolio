@@ -7,9 +7,8 @@ const translations = {
     es: {
         selectLanguage: "Idioma",
         presentationTitle: "¡Bienvenido!",
+        presentationParagraph: "Desarrollador Front End",
         presentationButton: "Contrátame",
-        presentationOne: "¡Hola! 👋 Mi nombre es Leo y soy Desarrollador Front End.",
-        presentationTwo: "Esta es mi página personal, donde se encuentran mis proyectos y algo de información sobre mí. ¡Espero que te guste!",
         aboutTitle: "Sobre mí",
         aboutParagraphOne: "Soy de Argentina 🇦🇷. Desde mi infancia me fascinaban los videojuegos y queria entender como se creaban. Eso hizo que más adelante en mi adolescencia me comenzara a interesar más por la tecnología y luego descubriera la programación.",
         aboutParagraphTwo: 'Escribí mi primer "Hola Mundo" allá por 2019 intentando crear una App para Android, pero mejor no te cuento como terminó 🤣. Actualmente me dedico a hacer proyectos Freelance, mientras desarrollo día a día mis conocimientos en este inmenso y apasionante mundo de la programación.',
@@ -32,14 +31,15 @@ const translations = {
         projectsButton01: "Repositorio",
         projectsButton02: "Demo",
         footerTitle: "Contacto",
+        footerParagraph01: "Hecho con ",
+        footerParagraph02: " por Leo",
         copyright: "Todos los derechos reservados",
     },
     en: {
         selectLanguage: "Language",
         presentationTitle: "Welcome!",
         presentationButton: "Hire me",
-        presentationOne: "Hi! 👋 My name is Leo and I'm Front End Developer.",
-        presentationTwo: "This is my personal page, where you can find my projects and some information about me. I hope you like it!",
+        presentationParagraph: "Front End Developer",
         aboutTitle: "About me",
         aboutParagraphOne: "I am from Argentina 🇦🇷. Since my childhood I was fascinated by video games and wanted to understand how they were created. That made me more interested in technology later in my teens and then I discovered programming.", 
         aboutParagraphTwo: 'I wrote my first "Hello World" back in 2019 trying to create an Android App, I better not tell you how it ended 🤣. Currently I do Freelance projects, while I develop my knowledge day by day in this immense and exciting world of programming.', 
@@ -62,6 +62,8 @@ const translations = {
         projectsButton01: "Repository",
         projectsButton02: "Website",
         footerTitle: "Contact",
+        footerParagraph01: "Made with ",
+        footerParagraph02: " by Leo",
         copyright: "All rights reserved",
     }
 }

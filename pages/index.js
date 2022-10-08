@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons"; 
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faInstagram, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 import Tilt from 'react-parallax-tilt';
 import { useContext } from "react";
 import { LanguageProvider } from "../context/LanguageContext";
@@ -18,9 +18,18 @@ import Movies from "../public/images/projects/movies.png";
 import Calculadora from "../public/images/projects/calculadora.png";
 import ChatBot from "../public/images/projects/chatbot.png";
 import Background from "../public/images/fondo.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+import HomeEng from '../components/HomeEng';
+import HomeSpa from '../components/HomeSpa';
 
 export default function Home() {
+  useEffect(() => { AOS.init(); }, [])
+
   const { texts, handleLanguage } = useContext(LanguageContext);
+  const homeSpa = texts.selectLanguage === "Idioma" && <HomeSpa />
+  const homeEng = texts.selectLanguage === "Language" && <HomeEng />
 
   return (
 
@@ -31,27 +40,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className='header'>
-        <div className="header-div">
-          <h3 className="terminal">admin@leo-laptop:~$</h3>
-          <h3 className="typing">cd Portfolio/Leonardo-Cipollone</h3>
-        </div>
-        <div className='language-container'>
-          <button className='spanish-button' value="es" onClick={handleLanguage} />
-          <button className='english-button' value="en" onClick={handleLanguage}/>
-        </div>
+      <div className='background-container'>
+        <header className='header'>
+          <div className="header-div">
+            <h3 className="terminal">admin@leo-laptop:~$</h3>
+            <h3 className="typing">cd Portfolio/Leonardo-Cipollone</h3>
+          </div>
+          <div className='language-container'>
+            <button className='spanish-button' value="es" onClick={handleLanguage} />
+            <button className='english-button' value="en" onClick={handleLanguage} />
+          </div>
+        </header>
 
-      </header>
-      <section className="uno">
-        <Image className='background' src={Background} alt="Background" layout='fill' objectFit='cover' objectPosition="center" />
-        <div className="caja-central">
+        <section className="uno">
+          <Image className='background' src={Background} alt="Background" layout='fill' objectFit='cover' objectPosition="center" />
+          <div className='letters-container'>
+            {homeSpa}
+            {homeEng}
+          </div>
+
           <div className="presentation-photo-box">
             <div className="presentation-content">
               <Image className="perfil" src={Perfil} alt="Leo Cipollone" layout="fill" />
               <h2>
                 Leo Cipollone
                 <br />
-                <span>Frontend Developer</span>
+                <span>{texts.presentationParagraph}</span>
               </h2>
               <a
                 href="https://www.linkedin.com/in/leocipollone/"
@@ -62,26 +76,14 @@ export default function Home() {
               </a>
             </div>
           </div>
-
-          <div className="caja-presentacion">
-            <div>
-              <h1 className="section-title">{texts.presentationTitle}</h1>
-              <p className="presentacion">
-                {texts.presentationOne}
-                <br />
-                <br />
-                {texts.presentationTwo}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section className="dos">
-        <h2 className="section-title">{texts.aboutTitle}</h2>
-        <p className="about-p">{texts.aboutParagraphOne}</p>
-        <p className="about-p">{texts.aboutParagraphTwo}</p>
-        <Image src={Resume} alt="resume" width={150} height={160} />
-        <div className="resume">
+        <h2 data-aos="zoom-in-up" className="section-title">{texts.aboutTitle}</h2>
+        <p data-aos="zoom-in-up" className="about-p">{texts.aboutParagraphOne}</p>
+        <p data-aos="zoom-in-up" className="about-p">{texts.aboutParagraphTwo}</p>
+        <Image data-aos="zoom-in-up" src={Resume} alt="resume" width={150} height={160} />
+        <div data-aos="zoom-in-up" className="resume">
           <p>
             <a
               href="./assets/documents/Leonardo Cipollone - CV - Desarrollador Front End.pdf"
@@ -100,159 +102,217 @@ export default function Home() {
           </p>
         </div>
 
-        <h2 className="section-title">{texts.techsTitle}</h2>
+        <h2 data-aos="zoom-in-up" className="section-title">{texts.techsTitle}</h2>
         <div className="techs-logo">
           <ul>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
-            <li>
-              <span />
-              <span />
-              <span />
-              <span />
-              <span />
-            </li>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
+            <div data-aos="zoom-in-up">
+              <li>
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </li>
+            </div>
           </ul>
         </div>
 
-        <h2 className="section-title">{texts.coursesTitle}</h2>
+        <h2 data-aos="zoom-in-up" className="section-title">{texts.coursesTitle}</h2>
         <div className="courses-container">
-          <div className="courses-card">
-            <div className="imgBx">
-              <a
-                href="https://www.soyhenry.com/webfullstack"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image src={Henry} alt="Curso Henry" />
-              </a>
-            </div>
-            <div className="content">
-              <h3>Henry Bootcamp</h3>
-              <p>{texts.coursesHenry}</p>
-            </div>
-          </div>
-          <div className="courses-card">
-            <div className="imgBx">
-              <a
-                href="https://www.accenture.com/ar-es/about/responsible-business/iniciatec"
-                target="_blank"
-                rel="noreferrer">
-                <Image src={Iniciatec} alt="Curso Iniciatec" />
-              </a>
-            </div>
-            <div className="content">
-              <h3>Iniciatec</h3>
-              <p>{texts.coursesIniciatec}</p>
+          <div data-aos="zoom-in-up">
+            <div className="courses-card">
+              <div className="imgBx">
+                <a
+                  href="https://www.soyhenry.com/webfullstack"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image src={Henry} alt="Curso Henry" />
+                </a>
+              </div>
+              <div className="content">
+                <h3>Henry Bootcamp</h3>
+                <p>{texts.coursesHenry}</p>
+              </div>
             </div>
           </div>
-          <div className="courses-card">
-            <div className="imgBx">
-              <a
-                href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image src={Javascript} alt="Curso JavaScript" />
-              </a>
-            </div>
-            <div className="content">
-              <h3>JavaScript</h3>
-              <p>{texts.coursesJavascript}</p>
+          <div data-aos="zoom-in-up">
+            <div className="courses-card">
+              <div className="imgBx">
+                <a
+                  href="https://www.accenture.com/ar-es/about/responsible-business/iniciatec"
+                  target="_blank"
+                  rel="noreferrer">
+                  <Image src={Iniciatec} alt="Curso Iniciatec" />
+                </a>
+              </div>
+              <div className="content">
+                <h3>Iniciatec</h3>
+                <p>{texts.coursesIniciatec}</p>
+              </div>
             </div>
           </div>
-          <div className="courses-card">
-            <div className="imgBx">
-              <a
-                href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Image src={React} alt="Curso React" />
-              </a>
+          <div data-aos="zoom-in-up">
+            <div className="courses-card">
+              <div className="imgBx">
+                <a
+                  href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image src={Javascript} alt="Curso JavaScript" />
+                </a>
+              </div>
+              <div className="content">
+                <h3>JavaScript</h3>
+                <p>{texts.coursesJavascript}</p>
+              </div>
             </div>
-            <div className="content">
-              <h3>React</h3>
-              <p>{texts.coursesReact}</p>
+
+          </div>
+          <div data-aos="zoom-in-up">
+            <div className="courses-card">
+              <div className="imgBx">
+                <a
+                  href="https://www.youtube.com/playlist?list=PLvq-jIkSeTUZ5XcUw8fJPTBKEHEKPMTKk"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Image src={React} alt="Curso React" />
+                </a>
+              </div>
+              <div className="content">
+                <h3>React</h3>
+                <p>{texts.coursesReact}</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section className="tres">
-      <Image className='background' src={Background} alt="Background" layout='fill' objectFit='cover' objectPosition="center" />
-        <h2 className="section-title">{texts.projectsTitle}</h2>
+        <Image className='background' src={Background} alt="Background" layout='fill' objectFit='cover' objectPosition="center" />
+        <h2 data-aos="zoom-in-up" className="section-title">{texts.projectsTitle}</h2>
         <div className="projects-container">
           <Tilt tiltReverse={true}>
-            <div className="cardWrap">
+            <div data-aos="zoom-in-up" className="cardWrap">
               <div className="card">
                 <div className="cardBg">
                   <Image src={Corporativa} alt="Landing page" layout="fill" />
@@ -283,7 +343,7 @@ export default function Home() {
             </div>
           </Tilt>
           <Tilt tiltReverse={true}>
-            <div className="cardWrap">
+            <div data-aos="zoom-in-up" className="cardWrap">
               <div className="card project02">
                 <div className="cardBg">
                   <Image src={Movies} alt="Movies Search" layout="fill" />
@@ -314,38 +374,7 @@ export default function Home() {
             </div>
           </Tilt>
           <Tilt tiltReverse={true}>
-            <div className="cardWrap">
-              <div className="card project03">
-                <div className="cardBg">
-                  <Image src={Calculadora} alt="Calculadora app" layout="fill" />
-                </div>
-                <div className="cardInfo">
-                  <h3 className="cardTitle">{texts.projectTitle03}</h3>
-                  <p>{texts.projectParagraph03}</p>
-                  <button>
-                    <a
-                      href="https://github.com/LeoCipollone/calculator"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {texts.projectsButton01}
-                    </a>
-                  </button>
-                  <button>
-                    <a
-                      href="https://leocipollone.github.io/calculator/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {texts.projectsButton02}
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </Tilt>
-          <Tilt tiltReverse={true}>
-            <div className="cardWrap">
+            <div data-aos="zoom-in-up" className="cardWrap">
               <div className="card project04">
                 <div className="cardBg">
                   <Image src={ChatBot} alt="Chatbot" layout="fill" />
@@ -375,11 +404,43 @@ export default function Home() {
               </div>
             </div>
           </Tilt>
+          <Tilt tiltReverse={true}>
+            <div data-aos="zoom-in-up" className="cardWrap">
+              <div className="card project03">
+                <div className="cardBg">
+                  <Image src={Calculadora} alt="Calculadora app" layout="fill" />
+                </div>
+                <div className="cardInfo">
+                  <h3 className="cardTitle">{texts.projectTitle03}</h3>
+                  <p>{texts.projectParagraph03}</p>
+                  <button>
+                    <a
+                      href="https://github.com/LeoCipollone/calculator"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {texts.projectsButton01}
+                    </a>
+                  </button>
+                  <button>
+                    <a
+                      href="https://leocipollone.github.io/calculator/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {texts.projectsButton02}
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </Tilt>
         </div>
 
         <footer className="footer">
-          <h2 className="section-title">{texts.footerTitle}</h2>
-          <ul className="social-icon">
+          <h2 data-aos="zoom-in-up" className="section-title">{texts.footerTitle}</h2>
+          <p data-aos="zoom-in-up">{texts.footerParagraph01} <FontAwesomeIcon icon={faHeart} /> {texts.footerParagraph02}</p>
+          <ul data-aos="zoom-in-up" className="social-icon">
             <li>
               <a href="https://www.linkedin.com/in/leocipollone/" target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} />
@@ -401,7 +462,7 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          <p className="copyright">{texts.copyright} © 2022</p>
+          <p data-aos="zoom-in-up" className="copyright">{texts.copyright} © 2022</p>
         </footer>
 
         <a className="whatsapp" href="https://wa.me/5492612592034" target="_blank" rel="noreferrer">
@@ -409,7 +470,7 @@ export default function Home() {
         </a>
       </section>
     </LanguageProvider>
-    
+
 
   )
 }

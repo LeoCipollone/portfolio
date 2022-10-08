@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: #222222;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 header {
   display: flex;
@@ -16,22 +16,14 @@ header {
   color: white;
   padding-left: 25px;
 }
-/* .background {
-  background-image: url(/public/fondo.jpg);
-  background-position: center;
-  background-size: cover;
-} */
-/* .background {
-  z-index: 0;
-} */
+
 .section-title {
   text-align: center;
-  font-family: bangers;
+  font-family: "bangers", sans-serif;
   margin-top: 30px;
   z-index: 1;
 }
 p {
-  font-style: italic;
   margin: 15px;
 }
 ul {
@@ -53,7 +45,7 @@ ul {
   font-size: 1.3em;
   font-weight: 100;
   border-right: 4px solid;
-  width: 296px;
+  width: 314px;
   animation: typing 3s steps(32), blink 0.6s infinite step-end alternate;
   overflow: hidden;
 }
@@ -93,37 +85,19 @@ ul {
   margin-right: 35px;
   z-index: 1;
 }
-
+.background-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
 .uno {
-  /* position: relative; */
-  height: 89vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.caja-central {
-  margin-top: 10%;
-  width: 60%;
-  height: 40%;
-  display: flex;
-  flex-direction: row;
-  border-radius: 10px;
-  background-color: #fafafa;
-  border-top-left-radius: 120px;
-  border-bottom-left-radius: 120px;
-  box-shadow: 13px 0 0 rgba(0, 0, 0, 0.85) inset;
-  z-index: 1;
-}
-.caja-presentacion {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  min-height: 150px;
-  background-color: #fafafa;
-  color: #303030;
-  padding: 10px;
-  border-radius: 10px;
-}
+
 .presentation-photo-box {
   display: flex;
   align-self: center;
@@ -230,6 +204,72 @@ ul {
   letter-spacing: 0.2em;
 }
 
+.letters-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 47%;
+  color: #fff;
+  z-index: 1;
+}
+.first-line-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.second-line-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.second-line-one {
+  display: flex;
+  flex-direction: row;
+  margin-right: 25px;
+}
+.second-line-two {
+  display: flex;
+  flex-direction: row;
+}
+.third-line-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.third-line-one {
+  display: flex;
+  flex-direction: row;
+  margin-right: 25px;
+}
+.third-line-two {
+  display: flex;
+  flex-direction: row;
+  margin-right: 25px;
+}
+.third-line-three {
+  display: flex;
+  flex-direction: row;
+}
+.letter {
+  font-size: 60px;
+  margin: 20px 0;
+}
+.letter:hover {
+  color: rgb(92, 255, 160);
+  animation: animateLetter 0.6s;
+}
+@keyframes animateLetter {
+  25% {
+    transform: scale(0.8, 1.3);
+  }
+  50% {
+    transform: scale(1.1, 0.8);
+  }
+  75% {
+    transform: scale(0.7, 1.2);
+  }
+}
+
 .dos {
   display: flex;
   flex-direction: column;
@@ -326,71 +366,90 @@ ul {
   opacity: 0.1;
 }
 
-.techs-logo ul li:nth-child(1) span {
+.techs-logo ul div:nth-child(1) li span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(2) span {
+.techs-logo ul div:nth-child(2) li span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(3) span {
+.techs-logo ul div:nth-child(3) li span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(4) span {
+.techs-logo ul div:nth-child(4) li span {
+  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.techs-logo ul div:nth-child(5) li span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(5) span {
-  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg");
+.techs-logo ul div:nth-child(6) li span {
+  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(6) span {
+.techs-logo ul div:nth-child(7) li span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(7) span {
-  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg");
+.techs-logo ul div:nth-child(8) li span {
+  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(8) span {
+.techs-logo ul div:nth-child(9) li span {
+  background: url("/scrum.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(1px 1px 5px #ffffff);
+}
+.techs-logo ul div:nth-child(10) li span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(9) span {
+.techs-logo ul div:nth-child(11) li span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(10) span {
+.techs-logo ul div:nth-child(12) li span {
+  background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: drop-shadow(1px 1px 5px #ffffff);
+}
+.techs-logo ul div:nth-child(13) li span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
-.techs-logo ul li:nth-child(11) span {
+.techs-logo ul div:nth-child(14) li span {
   background: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg");
   background-size: cover;
   background-repeat: no-repeat;
   filter: drop-shadow(1px 1px 5px #ffffff);
 }
+
 
 .tres {
   position: relative;
@@ -696,8 +755,10 @@ footer .social-icon li a:hover {
 footer p {
   text-align: center;
   margin-top: 15px;
-  margin-bottom: 10px;
   font-size: 1.1rem;
+}
+.copyright {
+  margin-bottom: 110px;
 }
 .whatsapp {
   position: fixed;
@@ -757,13 +818,16 @@ footer p {
 
 /*Dispositivos moviles*/
 @media (max-width: 1000px) {
+  .uno {
+    justify-content: unset;
+  }
   .terminal {
     font-size: 10px;
     margin-right: 3px;
   }
   .typing {
     font-size: 10px;
-    width: 142px;
+    width: 150px;
 
     animation: typing 3s steps(30), blink 0.6s infinite step-end alternate;
     overflow: hidden;
@@ -787,33 +851,14 @@ footer p {
     font-size: 21px;
   }
   .uno {
-    height: auto;
+    flex-direction: column-reverse;
   }
-  .caja-central {
-    width: 90%;
-    height: 90%;
-    flex-direction: column;
-    border-radius: 20px;
-    box-shadow: none;
-    background: none;
-    margin-bottom: 40px;
-  }
-
-  .caja-presentacion {
+  .letters-container {
     align-self: center;
-    width: 90%;
-    height: 40%;
-    text-align: center;
   }
-
-  div.caja-presentacion {
-    padding: 0;
-  }
-
-  .presentacion {
-    min-height: 30%;
-    margin: 14px;
-    font-size: 14px;
+  .letter {
+    font-size: 40px;
+    margin: 15px 0;
   }
 
   .dos {
@@ -830,10 +875,17 @@ footer p {
   .language-container {
     margin-right: 15px;
   }
-  .caja-central {
-    margin-top: 0;
+  .letters-container {
+    height: 50%;
+    justify-content: flex-start;
   }
+  .letter {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+
   .presentation-photo-box {
+    margin-bottom: 20px;
     min-width: 250px;
     min-height: 250px;
   }
@@ -863,11 +915,11 @@ footer p {
     padding: 5px;
   }
   .terminal {
-    font-size: 8px;
+    font-size: 7px;
   }
   .typing {
     font-size: 8px;
-    width: 114px;
+    width: 120px;
 
     animation: typing 3s steps(30), blink 0.6s infinite step-end alternate;
     overflow: hidden;
@@ -875,8 +927,8 @@ footer p {
   .language-container {
     margin-right: 5px;
   }
-  .caja-central {
-    margin-top: 0;
+  .letter {
+    font-size: 18px;
   }
   .presentation-photo-box {
     min-width: 200px;
