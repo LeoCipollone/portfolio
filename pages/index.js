@@ -18,6 +18,7 @@ import Movies from "../public/images/projects/movies.png";
 import Calculadora from "../public/images/projects/calculadora.png";
 import ChatBot from "../public/images/projects/chatbot.png";
 import Background from "../public/images/fondo.jpg";
+import Store from "../public/images/projects/store.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -315,11 +316,42 @@ export default function Home() {
             <div data-aos="zoom-in-up" className="cardWrap">
               <div className="card">
                 <div className="cardBg">
+                  <Image src={Store} alt="ecommerce" layout="fill" />
+                </div>
+                <div className="cardInfo">
+                  <h3 className="cardTitle">E-commerce</h3>
+                  <p>{texts.projectParagraph01}</p>
+                  <button>
+                    <a
+                      href="https://github.com/LeoCipollone/store"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {texts.projectsButton01}
+                    </a>
+                  </button>
+                  <button>
+                    <a
+                      href="https://helentejidos.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {texts.projectsButton02}
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </Tilt>
+          <Tilt tiltReverse={true}>
+            <div data-aos="zoom-in-up" className="cardWrap">
+              <div className="card">
+                <div className="cardBg">
                   <Image src={Corporativa} alt="Landing page" layout="fill" />
                 </div>
                 <div className="cardInfo">
                   <h3 className="cardTitle">Bolsas Sorin S.R.L</h3>
-                  <p>{texts.projectParagraph01}</p>
+                  <p>{texts.projectParagraph02}</p>
                   <button>
                     <a
                       href="https://github.com/LeoCipollone/ds-sorin-bolsas"
@@ -350,7 +382,7 @@ export default function Home() {
                 </div>
                 <div className="cardInfo">
                   <h3 className="cardTitle">TuPeli</h3>
-                  <p>{texts.projectParagraph02}</p>
+                  <p>{texts.projectParagraph03}</p>
                   <button>
                     <a
                       href="https://github.com/LeoCipollone/movies"
@@ -412,7 +444,7 @@ export default function Home() {
                 </div>
                 <div className="cardInfo">
                   <h3 className="cardTitle">{texts.projectTitle03}</h3>
-                  <p>{texts.projectParagraph03}</p>
+                  <p>{texts.projectParagraph05}</p>
                   <button>
                     <a
                       href="https://github.com/LeoCipollone/calculator"
